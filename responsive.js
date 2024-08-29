@@ -8,6 +8,9 @@ function updateMessage() {
         messageDiv.textContent = 'कृपया यो साइट मोबाइलमा नखोल्नुहोस् यो Responsive छैन'
     } else {
         mainDiv.innerHTML  = `<img src="./idPhoto.jpg" alt="Lovely😘">`
+        if (messageDiv) {
+            messageDiv.textContent = '';
+        }
 
     }
 }
